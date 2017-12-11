@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app-stylesheet-index.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="ICONO.png" />
+    
+
+    <style type="text/css">
+    .color { background: rgb(27, 30, 36); }
+    </style>
+
+    <script type="text/javascript">
+    function yScroll(e) {
+        e.preventDefault();
+
+        let pageTop = document.getElementById('app-header-pane');
+
+        yPos = window.pageYOffset;
+        if (yPos > 150) {
+            //pageTop.style.backgroundColor = "rgb(27, 30, 36)";
+            pageTop.style.boxShadow = "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)";
+        }
+        else {
+            //pageTop.style.backgroundColor = "rgba(27, 30, 36, .8)";
+            pageTop.style.boxShadow = "";
+        }
+    }
+    window.addEventListener('scroll', yScroll);
+
+    let m1 = document.getElementById('menu1');
+    let m2 = document.getElementById('menu2');
+    let m3 = document.getElementById('menu3');
+
+    
+    let menu1 = document.getElementById('m1');
+    let menu2 = document.getElementById('m2');
+    let menu3 = document.getElementById('m3');
+
+    m1.addEventListener('click', function() {
+        m1.style.backgroundColor = "#EACA6A";
+        menu1.style.display = "block";
+    });
+
+    m2.addEventListener('click', function() {
+        m2.style.backgroundColor = "#EACA6A";
+        menu2.style.display = "block";
+    });
+
+    m3.addEventListener('click', function() {
+        m3.style.backgroundColor = "#EACA6A";
+        menu3.style.display = "block";
+    });
+
+    </script>
+
+</head>
+<body>
+
+<!-- 
+    <div class="sub-screen" id="modal">
+        <div class="sub-box-input-field">
+            <button class="close-button" onclick="closeModal();">x</button>
+            <img src="logo.png" width="100%" alt="">
+            <div class="sub-h-tag">
+                <span data-sub-tag> subscribete para recibir informacion actualizada </span>
+            </div>
+            <form action="">
+                <div class="input-group-sub">
+                    <input type="text" class="" id="" name="" value="" placeholder="email">
+                </div>
+                <div class="input-group-sub">
+                    <input type="text" class="" id="" name="" value="" placeholder="email">
+                </div>
+                <button type="submit" class="subs_"> subscribirme </button>
+            </form>
+        </div>
+    </div>
+-->
+
+    <div id="app-wrapper">
+        <div id="app-header-pane">
+            <div class="screen-content-size-adjuster">
+                <div class="embed">
+                   <img src="logo.png" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="landing-page">
+
+            <!-- landing slider -->
+            <div id="landing-slider">
+
+                <div id="particles-js"></div>
+
+                <div class="screen-content-size-adjuster">
+                    <ul class="flexible-content">
+                        <li>
+                            <div id="market-status-tv"></div>
+                        </li>
+                        <li>
+                            <div class="pre-text-block">
+                                <div class="big-head">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </div>
+                                <div class="block-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dicta libero, similique voluptates magnam asperiores, dignissimos tempore velit possimus molestiae modi dolor. Sunt repudiandae ut, facere, perferendis fugiat eaque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quis ab nihil modi tempore, voluptatem corporis unde cupiditate fugit molestias dolorum, debitis dolores ratione maxime.
+                                </div>
+                                <div class="action">
+                                    <button class="learn-more"> learn more </button>
+                                    <button class="buy-now"> buy now </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- !end landing slider -->
+
+            <!--  -->
+            <div id="what-is-prestige">
+                <div id="on-prestige-market-tv">
+                    <div class="screen-content-size-adjuster">
+                        <ul>
+                            <li>
+                                <div class="box-status-tv"></div>
+                            </li>
+                            <li>
+                                <div class="box-status-tv"></div>
+                            </li>
+                            <li>
+                                <div class="box-status-tv"></div>
+                            </li>
+                            <li>
+                                <div class="box-status-tv"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more-tab">
+                        view more
+                    </div>
+                </div>
+
+                <div id="prestige-definition">
+                    <div class="screen-content-size-adjuster">
+                        <div class="box-duplex">
+                            <div class="box-map-block">
+                                <div class="map-menu">
+                                    <ul>
+                                        <li id="menu1"> menu 1 </li>
+                                        <li id="menu2"> menu 2 </li>
+                                        <li id="menu3"> menu 3 </li>
+                                    </ul>
+                                </div>
+
+                                <div class="map-info" id="m1" style="display: block;">
+                                    <div class="big-head">
+                                        Prestige our plans for the upcoming 2018
+                                    </div>
+                                    <div class="block-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eos rerum odit, possimus, facere doloribus error inventore aliquid beatae fugiat deserunt saepe vitae, sint voluptates enim ducimus dolor quisquam obcaecati. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, accusantium rem! Blanditiis quaerat sint ut quasi consequatur, et ducimus atque doloremque expedita temporibus cumque. Vitae ratione numquam veniam vero inventore.
+                                    </div>
+                                </div>
+
+
+                                <div class="map-info" id="m2">
+                                    <div class="big-head">
+                                        Prestige our plans for the upcoming 2018
+                                    </div>
+                                    <div class="block-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eos rerum odit, possimus, facere doloribus error inventore aliquid beatae fugiat deserunt saepe vitae, sint voluptates enim ducimus dolor quisquam obcaecati. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, accusantium rem! Blanditiis quaerat sint ut quasi consequatur, et ducimus atque doloremque expedita temporibus cumque. Vitae ratione numquam veniam vero inventore.
+                                    </div>
+                                </div>
+
+
+                                <div class="map-info" id="m3">
+                                    <div class="big-head">
+                                        Prestige our plans for the upcoming 2018
+                                    </div>
+                                    <div class="block-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eos rerum odit, possimus, facere doloribus error inventore aliquid beatae fugiat deserunt saepe vitae, sint voluptates enim ducimus dolor quisquam obcaecati. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, accusantium rem! Blanditiis quaerat sint ut quasi consequatur, et ducimus atque doloremque expedita temporibus cumque. Vitae ratione numquam veniam vero inventore.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-graph-block">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end what prestige -->
+
+            <div id="partners">
+                <div class="screen-content-size-adjuster">
+                    <div class="sol-tag">
+                        Partners &amp; Media coverage
+                    </div>
+                    <ul>
+                        <li>
+                            <img src="smartsolutions.svg" width="180px" alt="">
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- prestige -->
+            <div id="why-prestige">
+                
+            </div>
+            <!-- @end prestige -->
+            
+
+            <!-- about us -->
+            <div id="about-us">
+                <ul>
+                    <li>
+                        <div class="id-card">
+                            <div class="id-card-portrait"></div>
+                            <div class="block-inf">
+                                <div class="creator-name"> Joel Cardenas </div>
+                                <div class="creator-social-contact">
+                                    <i class="linked"></i>
+                                    <i class="twitter"></i>
+                                </div>
+                            </div>
+                            <div class="creator-charge"> El del dinero </div>
+                    </li>
+                    <li>
+                        <div class="id-card">
+                            <div class="id-card-portrait"></div>
+                            <div class="block-inf">
+                                <div class="creator-name"> Joel Cardenas </div>
+                                <div class="creator-social-contact">
+                                    <i class="linked"></i>
+                                    <i class="twitter"></i>
+                                </div>
+                            </div>
+                            <div class="creator-charge"> El del dinero </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="id-card">
+                            <div class="id-card-portrait"></div>
+                            <div class="block-inf">
+                                <div class="creator-name"> Joel Cardenas </div>
+                                <div class="creator-social-contact">
+                                    <i class="linked"></i>
+                                    <i class="twitter"></i>
+                                </div>
+                            </div>
+                            <div class="creator-charge"> El del dinero </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="id-card">
+                            <div class="id-card-portrait"></div>
+                            <div class="block-inf">
+                                <div class="creator-name"> Joel Cardenas </div>
+                                <div class="creator-social-contact">
+                                    <i class="linked"></i>
+                                    <i class="twitter"></i>
+                                </div>
+                            </div>
+                            <div class="creator-charge"> El del dinero </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="id-card">
+                            <div class="id-card-portrait"></div>
+                            <div class="block-inf">
+                                <div class="creator-name"> Joel Gonzales </div>
+                                <div class="creator-social-contact">
+                                    <i class="linked"></i>
+                                    <i class="twitter"></i>
+                                </div>
+                            </div>
+                            <div class="creator-charge"> El del dinero </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="slide-scenario">
+
+                </div>
+
+            </div>
+            <!-- @end about us -->
+
+
+            <!-- contact -->
+            <div id="">
+
+            </div>
+            <!-- @end contact -->
+
+        </div>
+    </div>
+
+    <script src="particles.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
